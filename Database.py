@@ -11,8 +11,8 @@ class UserDatabase():
         self.totalUsers.append(user2)
         
 
-    def addUser(User):
-        print("jerje")
+    def addUser(self,user):
+        self.totalUsers.append(user)
     
 
     def getUsersAtIndex(self,index):
