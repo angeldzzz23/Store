@@ -6,7 +6,7 @@ class UserDatabase():
     
     def __init__(self):
         user = User.User("angelzzz23", "password")
-        user2 = User.User("angelzzz23", "password")
+        user2 = User.User("angel23", "password")
         self.totalUsers.append(user)
         self.totalUsers.append(user2)
         
@@ -23,14 +23,13 @@ class UserDatabase():
 
     # this checks if the user exists in the database
     def userAlreadyExists(self,pendingUser):
+        
         for user in self.totalUsers:
             if (user.isTheSame(pendingUser)):
                 return True
         return False
 
 
-database = UserDatabase()
 
-poposer = User.User("angelzzz23", "password")
 
 

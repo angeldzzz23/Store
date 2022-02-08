@@ -8,10 +8,13 @@ class User():
         self.username = username
         self.password = password
 
-    def isTheSame(self, user):
+    def isTheSame(self, user):   
         if (self.username == user.username and self.password == user.password):
             return True
         return False
+
     def getUserName(self):
         return self.username
-    
+
+
+
