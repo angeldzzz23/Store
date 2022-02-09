@@ -30,8 +30,6 @@ print(currentUser.sizeOfCart())
 # checking out
 
 
-# choosing date of delivery
-
 # printing receipt as a textfile 
 
 #valInp = app.ValidInput()

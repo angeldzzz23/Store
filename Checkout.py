@@ -5,15 +5,8 @@ from datetime import datetime
 
 
 
-class Date():
 
-    def __init__(self,month, day, year):
-        self.month = month
-        self.day = day
-        self.year = year
-
-
-
+# the checkout controller
 
 class CheckoutController():
 
