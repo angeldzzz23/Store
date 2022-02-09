@@ -11,7 +11,8 @@ class Product():
         if self.inventory > 0:
             return True
         return False
-        
+    def getPrice(self):
+        return self.price
 
     def decreaseInventory(self):
         self.inventory = self.inventory - 1

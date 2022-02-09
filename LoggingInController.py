@@ -11,7 +11,7 @@ class LogginInController():
             
 
             while (True):
-                logInView.displayLogInMenu()
+               
                 logInView.cleanConsole()
                 logInView.displayLogInMenu()
                 decision = input("what will you like to do: ")

@@ -3,7 +3,10 @@ import View
 import Database
 import User
 import LoggingInController
+import StoreController
 
+
+# fake valid credit card:79927398713
 
 # Grocery store delivery service 
 
@@ -19,9 +22,13 @@ print(currentUser.getUserName())
 
 
 # Adding things to your cart
-    
+
+storecontrol = StoreController.StoreController(currentUser)
+
+print(currentUser.sizeOfCart())
 
 # checking out
+
 
 # choosing date of delivery
 

@@ -16,7 +16,7 @@ class Store():
         tangerine = Product.Fruit("tangerine", 12, 30)
         orange = Product.Fruit("orange", 12, 30)
         iphone = Product.Electronic("iphone",30,20)
-        mac = Product.Electronic("iphone",300,20)
+        mac = Product.Electronic("mac",300,20)
         self.products.append(apple)
         self.products.append(banana)
         self.products.append(tangerine)
@@ -26,6 +26,8 @@ class Store():
         
     def getAmountProducts(self):
         return len(self.products)
+    def getPrduct(self, index):
+        return self.products[index]
 
     # throw an error if index is out of range
     def getProductAtIndex(self, index):
@@ -38,8 +40,7 @@ class Store():
         return self.products[index].hasEnoughInventory() and index < self.getAmountProducts()
     
         
-user = User.User("angel", "sheep787")
 
 
-#print(store.getAmountProducts())
+
 
