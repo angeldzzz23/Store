@@ -5,7 +5,7 @@ import User
 import LoggingInController
 
 
-# the
+# Grocery store delivery service 
 
 # creating the database
 database = Database.UserDatabase()
