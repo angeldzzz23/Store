@@ -1,4 +1,4 @@
-
+import Product
 import User
 import datetime
 from datetime import datetime
@@ -25,14 +25,26 @@ class CheckoutController():
         print("making the reservation (up to a year in advc)")
         date = self.getValidDate() 
 
+
+
+        file1 = open("receipt.txt","w")
+        file1.write("your " +  date + " receipt" + "\n")
+        
         
         # print receipt
-        
-        
+        #  print("your", date, "receipt")
+        user.getTotal()
+    
+        for i in range(user.sizeOfCart()):
+            print(user.getProduct(i).name, str(user.getProduct(i).price))
+            file1.write(user.getProduct(i).name + " " + str(user.getProduct(i).price) + "\n")
+
+        file1.write("total: " + str(user.getTotal()) + "\n") 
         
 
+        file1.close()
         
-    
+            
     def getValidCardInfo(self):
         while(True):
             card = input("enter your card number: ")
@@ -109,7 +121,7 @@ class CheckoutController():
                     continue
 
                 # here i could also check the availabilities if I want,
-
+                    
                 
             except ValueError:
                 isValidDate = False
@@ -131,7 +143,15 @@ class CheckoutController():
 
 
 
+product = Product.Fruit("apple",30,20)
+product2 = Product.Fruit("pear",30,20)
+
 user = User.User("anel", "pass")
+
+
+user.addProductToCart(product)
+user.addProductToCart(product2)
+#print(user.getTotal())
 
 check = CheckoutController(user)
 
@@ -144,4 +164,5 @@ check = CheckoutController(user)
 #
 #date = datetime.datetime(2008, 12, 22)
 #print(datetime.now() > date)
+
 

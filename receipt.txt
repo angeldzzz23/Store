@@ -1,0 +1,4 @@
+your 02/11/2022 receipt
+apple 30
+pear 30
+total: 60

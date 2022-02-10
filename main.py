@@ -4,9 +4,11 @@ import Database
 import User
 import LoggingInController
 import StoreController
+import CheckoutController
 
 
-# fake valid credit card:79927398713
+# fake valid credit card: 79927398713
+
 
 # Grocery store delivery service 
 
@@ -29,7 +31,7 @@ print(currentUser.sizeOfCart())
 
 # checking out
 
-
+ CheckoutController()
 # printing receipt as a textfile 
 
 #valInp = app.ValidInput()

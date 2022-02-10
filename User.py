@@ -19,9 +19,7 @@ class Cart():
     
 
 # user class contains a password and a username
-# also contains a 
-
-
+# also contains a
 class User():
     
     def __init__(self,username, password):
@@ -29,11 +27,18 @@ class User():
         self.password = password
         self.cart = Cart()
 
+    def getTotal(self):
+        return self.cart.total
+
     def addProductToCart(self,product):
         self.cart.addProduct(product)
 
     def sizeOfCart(self):
         return self.cart.getTotalProductsInCart()
+
+    def getProduct(self, index):
+        return self.cart.getProductAtIndex(index)
+        
         
 
     def isTheSame(self, user):   
