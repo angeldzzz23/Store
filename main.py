@@ -4,7 +4,7 @@ import Database
 import User
 import LoggingInController
 import StoreController
-import CheckoutController
+import Checkout
 
 
 # fake valid credit card: 79927398713
@@ -29,13 +29,14 @@ storecontrol = StoreController.StoreController(currentUser)
 
 print(currentUser.sizeOfCart())
 
+
+
+
 # checking out
+checkController  = Checkout.CheckoutController(currentUser)
+ 
 
- CheckoutController()
-# printing receipt as a textfile 
 
-#valInp = app.ValidInput()
-#username = valInp.get("username")
 
 
 

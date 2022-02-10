@@ -1,4 +1,6 @@
 your 02/11/2022 receipt
-apple 30
-pear 30
-total: 60
+apple 12
+banana 12
+tangerine 12
+orange 12
+total: 48
