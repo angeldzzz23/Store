@@ -20,14 +20,13 @@ loggingCont = LoggingInController.LogginInController(database)
 
 currentUser = loggingCont.getCurrentUser()
 
-print(currentUser.getUserName())
 
 
 # Adding things to your cart
 
 storecontrol = StoreController.StoreController(currentUser)
 
-print(currentUser.sizeOfCart())
+print(currentUser.sizeOfCart
 
 
 
